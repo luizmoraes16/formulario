@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #container {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .linha {
+        padding: 20px;
+        border: 1px solid #efefef;
+      }
+      button {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: -4px;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: times new roman; 
+      }
+
+      h1 {
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: 'Times New Roman';
+        border-bottom: 1px solid lightgray;
+
+      }
+
+
+      #masculino {
+        padding: 20px;
+        background-color: #18a6a5;
+        color: white;
+        border: 1px solid #18a6a5;
+        border-radius: 5px 0 0 5px;
+      }
+
+      #feminino {
+        padding: 20px;
+        background-color: white;
+        color: #18a6a5;
+        border: 1px solid #18a6a5;
+        border-radius: 0 5px 5px 0;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        color: #18a6a5;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #18a6a5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Novo contato</h1>
+
+      <form>
+        <div class="linha">
+          <button id="masculino">masculino</button>
+          <button id="feminino">feminino</button>
+        </div>
+
+        <div class="linha">
+          <label>nome</label>
+          <input type="text" id="nome" />
+        </div>
+
+        <div class="linha">
+          <label>sobrenome</label>
+          <input type="text" id="sobrenome" />
+        </div>
+
+        <div class="linha">
+          <label>empresa</label>
+          <input type="text" id="empresa" />
+        </div>
+
+        <div class="linha">
+          <label>email</label>
+          <input type="text" id="email" />
+        </div>
+
+        <div class="linha">
+          <label>telefone</label>
+          <input type="text" id="telefone" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
